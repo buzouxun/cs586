@@ -1,5 +1,5 @@
 package datasets;
 
-public class Friend {
+public class Helper {
 
 }

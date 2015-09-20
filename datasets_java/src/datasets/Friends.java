@@ -10,8 +10,8 @@ public class Friends {
 	
 	public Friends(int friendRel) {
 		this.friendRel = friendRel;
-		this.personId = Helper.randInt(1, 50000);
-		this.myFriend = Helper.randInt(1, 50000, this.personId);
+		this.personId = Helper.randInt(1, Main.sizeMyPage);
+		this.myFriend = Helper.randInt(1, Main.sizeMyPage, this.personId);
 		this.dateOfFriendship = Helper.randInt(1, 1000000);
 		this.desc = Helper.randText("desc", 20, 50);
 	}

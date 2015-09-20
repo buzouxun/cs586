@@ -10,8 +10,8 @@ public class AccessLog {
 	
 	public AccessLog(int accessId) {
 		this.accessId = accessId;
-		this.byWho = Helper.randInt(1, 50000);
-		this.whatPage = Helper.randInt(1, 50000, this.byWho);
+		this.byWho = Helper.randInt(1, Main.sizeMyPage);
+		this.whatPage = Helper.randInt(1, Main.sizeMyPage, this.byWho);
 		this.typeOfAccess = Helper.randText("typeAcs", 20, 50);
 		this.accessTime = Helper.randInt(1, 1000000);
 	}
